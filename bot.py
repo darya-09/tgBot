@@ -12,7 +12,7 @@ dp = Dispatcher()
 
 @dp.message()
 async def start(message: types.Message):
-    webAppInfo = types.WebAppInfo(url="your-webapp-url")
+    webAppInfo = types.WebAppInfo(url="https://darya-09.github.io/task_tree_miniapp/?")
     builder = ReplyKeyboardBuilder()
     builder.add(types.KeyboardButton(text='Отправить данные', web_app=webAppInfo))
     
